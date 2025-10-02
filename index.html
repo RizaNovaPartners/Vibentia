@@ -69,7 +69,7 @@
             transform: translateY(-4px);
             border-color: #8b5cf6;
             color: #fff;
-            box-shadow: 0 8px 15px rgba(139, 92, 246, 0.3);
+            box-shadow: 0 0 15px rgba(139, 92, 246, 0.3), 0 8px 15px rgba(139, 92, 246, 0.3);
         }
         .link-button:hover .icon-box {
             background-color: #8b5cf6; /* Icon background changes to brand color on hover */
@@ -99,6 +99,21 @@
             background-color: rgba(139, 92, 246, 0.9);
             color: white;
         }
+        
+        /* Logo Styling */
+        .logo-container {
+            width: 128px;
+            height: 128px;
+            box-shadow: 0 0 0 6px #8b5cf6, 0 0 0 10px rgba(255, 255, 255, 0.1);
+            position: relative;
+            margin: 0 auto;
+        }
+        .logo-container img {
+             /* Set a background color for the image placeholder */
+             background-color: #1a1a1a; 
+             border-radius: 9999px;
+        }
+
     </style>
 </head>
 <body class="p-4 sm:p-8 flex items-start justify-center">
@@ -106,9 +121,9 @@
     <div class="container mx-auto mt-8">
         <!-- Header & Profile Info -->
         <header class="text-center pb-8">
-            <div class="w-32 h-32 rounded-full overflow-visible mx-auto relative mb-4">
-                <!-- Profile Image -->
-                <img src="https://placehold.co/128x128/8b5cf6/ffffff?text=V" onerror="this.onerror=null; this.src='https://placehold.co/128x128/8b5cf6/ffffff?text=V';" alt="Vibentia Logo" class="w-full h-full object-cover rounded-full">
+            <div class="logo-container w-32 h-32 rounded-full overflow-visible mx-auto mb-4">
+                <!-- LOGO IS LOADED FROM THE SPECIFIED PATH -->
+                <img src="logos/vibentia_logo.png" onerror="this.onerror=null; this.src='https://placehold.co/128x128/000000/ffffff?text=V';" alt="Vibentia Logo" class="w-full h-full object-cover rounded-full">
                 
                 <!-- Email Contact Button integrated below the logo -->
                 <a id="email-contact-btn" href="mailto:vibentiamusic@gmail.com" class="absolute bottom-[-15px] left-1/2 transform -translate-x-1/2 px-3 py-1 text-xs rounded-full shadow-lg transition-all duration-300 hover:bg-[#a78bfa] hover:scale-105">
@@ -116,7 +131,8 @@
                 </a>
             </div>
             
-            <h1 class="text-4xl font-extrabold text-white tracking-widest mt-6">VIBENTIA</h1>
+            <!-- Removed the VIBENTIA text line -->
+            <p class="text-xl font-extrabold text-white mt-6 tracking-widest">VIBENTIA</p>
             <p class="text-sm text-gray-500 mt-1 font-medium">Uzbekistan | Electronic Artist</p>
             <p class="text-xs text-gray-600">Azizjon Rahmonov, b. 1984</p>
         </header>
@@ -128,7 +144,7 @@
                 <h2 class="text-2xl font-black text-white">LATEST RELEASE</h2>
             </div>
             
-            <p class="text-xl font-bold text-gray-200 mb-2">Vibentia – In Every Rhythm</p>
+            <p class="text-xl font-bold text-gray-200 mb-2">In Every Rhythm</p>
             <p class="text-sm text-yellow-300 mb-4 font-semibold">OUT NOW | Exclusive on YouTube</p>
             
             <a href="https://youtu.be/xwJSEHr09h4" target="_blank" class="premiere-button inline-block w-full py-3 rounded-lg text-white transition-transform duration-300">
@@ -193,6 +209,13 @@
                 RizaNova (Uzbekistan)
             </a>
 
+            <a href="https://zvuk.com/artist/213315994" target="_blank" class="link-button flex w-full py-3 rounded-xl items-center">
+                <div class="icon-box">
+                    <i class="fas fa-wave-square text-lg text-green-500"></i>
+                </div>
+                Zvuk
+            </a>
+
         </section>
 
 
@@ -219,6 +242,20 @@
                     <i class="fab fa-tiktok text-lg text-white"></i>
                 </div>
                 TikTok (Short Form)
+            </a>
+            
+             <a href="https://www.facebook.com/vibentiamusic" target="_blank" class="link-button flex w-full py-3 rounded-xl items-center">
+                <div class="icon-box">
+                    <i class="fab fa-facebook-f text-lg text-blue-600"></i>
+                </div>
+                Facebook Page
+            </a>
+            
+            <a href="https://vk.com/artist/vibentia" target="_blank" class="link-button flex w-full py-3 rounded-xl items-center">
+                <div class="icon-box">
+                    <i class="fab fa-vk text-lg text-blue-500"></i>
+                </div>
+                VK
             </a>
 
         </section>
